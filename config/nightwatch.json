@@ -1,0 +1,45 @@
+{
+	"src_folders": ["./src/tests"],
+	"output_folder": "./logs/",
+	"selenium": {
+		"start_process": false,
+		"log_path": "./logs/"
+	},
+	"test_settings": {
+		"default": {
+			"launch_url": "http://localhost/",
+			"selenium_host": "127.0.0.1",
+			"selenium_port": 4444,
+			"silent": true,
+			"screenshots": {
+				"enabled": true,
+				"on_failure": true,
+				"on_error": true,
+				"path": "./screenshots/errors/"
+			},
+			"desiredCapabilities": {
+				"browserName": "firefox",
+				"javascriptEnabled": true,
+				"acceptSslCerts": true
+			}
+		},
+		"android": {
+			"launch_url": "http://www.google.com/",
+			"selenium_port": 4723,
+			"selenium_host": "localhost",
+			"silent": true,
+			"screenshots": {
+				"enabled": false,
+				"path": ""
+			},
+			"desiredCapabilities": {
+				"browserName": "chrome",
+				"platformName": "ANDROID",
+				"deviceName": "adb connect appsci.pre.all.idealista:7401",
+				"version": "",
+				"javascriptEnabled": true,
+				"acceptSslCerts": true
+			}
+		}
+	}
+}
