@@ -35,7 +35,7 @@
 			"desiredCapabilities": {
 				"browserName": "chrome",
 				"platformName": "ANDROID",
-				"deviceName": "adb connect appsci.pre.all.idealista:7401",
+				"deviceName": "adb connect deviceFarmURL:7401",
 				"version": "",
 				"javascriptEnabled": true,
 				"acceptSslCerts": true
